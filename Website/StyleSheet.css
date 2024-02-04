@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+     max-width: 650px;
+     padding: 28px;
+     margin: 0 28px;
+     box-shadow: 0 15px 20px #2266aa;
+}
+
+h2{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left;
+    color: #2f4f4f;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input-box{
+    display: flex;
+    flex-wrap:wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.input-box label, .gender-title{
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin:5px 0;
+}
+
+.gender-title{
+    font-size: 16px;
+}
+
+.input-box label, .city-title{
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin:5px 0;
+}
+
+.city-title{
+    font-size: 16px;
+}
+
+.input-box label, .q1-title{
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin:5px 0;
+}
+
+.q1-title{
+    font-size: 16px;
+}
+
+.input-box label, .q2-title{
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin:5px 0;
+}
+
+.q2-title{
+    font-size: 16px;
+}
+
+.input-box label, .q3-title{
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin:5px 0;
+}
+
+.q3-title{
+    font-size: 16px;
+}
+
+.input-box label, .q4-title{
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin:5px 0;
+}
+
+.q4-title{
+    font-size: 16px;
+}
+
+.input-box input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.input-box input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0,2);
+}
+.gender-category{
+    color: grey;
+}
+.gender-category label{
+    padding:0 20px 0 5px;
+    font-size: 14px;
+}
+.gender-category label, .gender-category input{
+    cursor:pointer;
+}
+
+.city-category{
+    color: grey;
+}
+.city-category label{
+    padding:0 20px 0 5px;
+    font-size: 14px;
+}
+.city-category label, .city-category input{
+    cursor:pointer;
+}
+
+.q1r-category{
+    color: grey;
+}
+.q1-category label{
+    padding:0 20px 0 5px;
+    font-size: 14px;
+}
+.q1-category label, .q1-category input{
+    cursor:pointer;
+}
+
+.q2-category{
+    color: grey;
+}
+.q2-category label{
+    padding:0 20px 0 5px;
+    font-size: 14px;
+}
+.q2-category label, .q2-category input{
+    cursor:pointer;
+}
+
+.q3r-category{
+    color: grey;
+}
+.q3-category label{
+    padding:0 20px 0 5px;
+    font-size: 14px;
+}
+.q3-category label, .q3-category input{
+    cursor:pointer;
+}
+
+.q4-category{
+    color: grey;
+}
+.q4-category label{
+    padding:0 20px 0 5px;
+    font-size: 14px;
+}
+.q4-category label, .q4-category input{
+    cursor:pointer;
+}
+
+.alert p{
+    font-size: 14px;
+    font-style: italic;
+    color: dimgray;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.alert a{
+    text-decoration: none;
+}
+
+.alert a:hover{
+    text-decoration: underlinec ;
+}
+
+.button-container{
+    margin: 15px 0;
+}
+
+.button-container button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #aa0707,#efc7c7);
+}
+
+.button-container button:hover{
+    background-image: linear-gradient(to right, #efc7c7,#aa0707);
+}
+
+@media(max-width:600px){
+     .container{
+        min-height: 280px;
+     }
+     .content{
+        max-height: 380px;
+        overflow: auto;
+     }
+     .input-box{
+        margin-bottom: 12px;
+        width: 100%;
+     }
+     .input-box:nth-child(2n){
+        justify-content: space-between;
+     }
+     .gender-category{
+        display: flex ;
+        justify-content: space-between;
+        width: 60%;
+     }
+     .city-category{
+        display: flex ;
+        justify-content: space-between;
+        width: 60%;
+     }
+     .q1-category{
+        display: flex ;
+        justify-content: space-between;
+        width: 60%;
+     }
+     .q2-category{
+        display: flex ;
+        justify-content: space-between;
+        width: 60%;
+     }
+     .q3-category{
+        display: flex ;
+        justify-content: space-between;
+        width: 60%;
+     }
+     .q3-category{
+        display: flex ;
+        justify-content: space-between;
+        width: 60%;
+     }
+
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lanb="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="StyleSheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Register Form</title>  
+    </head>
+
+    <body>
+        <div class="container">
+            <form action="http://localhost/register.php" method="post">
+
+            <h2>Registration Form for Blood Donor</h2>
+
+            <div class="content">
+
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" placeholder="Enter full name" name="dname" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="idcard">NIC Number</label>
+                    <input type="text" placeholder="Enter NIC Number" name="donor_id" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="date">Date of Birth</label>
+                    <input type="date" placeholder="" name="dob" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Email Address</label>
+                    <input type="email" placeholder="Enter your valid Email" name="email" required>
+                </div> 
+
+                <div class="input-box">
+                   <label for="phonenumber">Phone Number</label>
+                   <input type="tel" placeholder="Enter Phone number" name="phone_no" required>
+                </div> 
+
+                <div class="input-box">
+                   <label for="address">Home Address</label>
+                   <input type="text" placeholder="Enter Home Address" name="address" required>
+                </div>
+
+                 <div class="input-box">
+                    <label for="weight">Weight(Kg)</label>
+                    <input type="number" placeholder="Enter weight" name="weight" required>
+                 </div>
+
+                 <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter password" name="password" required>
+                 </div>
+
+                 <span class="gender-title">Gender</span>
+                 <div class="gender-category">
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value = "female">Female</option>
+                        </select> <br/> <br/>
+                 </div> 
+
+                 <span class="city-title">City</span>
+                 <div class="city-category">
+                    <select name="city">
+                        <option value="matara">Matara</option>
+                        <option value = "galle">Galle</option>
+                        <option value = "hambantota"> Hambantota </option>
+                        </select> <br/> <br/>
+                 </div> 
+
+            <!---   <span class="q4-title">Do you have Tatoos?</span>
+                <div class="q4-category">
+                    <input type="radio"  name="tatoo" id="q4yes">
+                    <label for="q4">Yes</label>
+                    <input type="radio"  name="tatoo" id="q4no">
+                    <label for="q4">No</label>
+                </div>   -->
+            </div>
+            <div class="alert">
+                <p>By click sign Up, you agree to our <a href="index.html">Terms & Privacy Policy.</a></p>
+            </div>
+            <div class="button-container">
+                <button type="submit" name="submit">Register</button>
+            </div>
+            </form>  
+        </div>
+    </body>
+</html>
